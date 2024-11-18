@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
+import 'package:three_mini_projeto/screens/gerenciar_paises.dart';
 
 class MeuDrawer extends StatelessWidget {
   const MeuDrawer({super.key});
@@ -50,6 +51,16 @@ class MeuDrawer extends StatelessWidget {
             onTap: () {
               Navigator.of(context)
                   .pushNamed('/gerenciar_lugares'); // Rota para a nova tela
+            },
+          ),
+
+          ListTile(
+            leading: const Icon(Icons.map), // Ícone para "Gerenciar Países"
+            title: const Text('Gerenciar Países'),
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (ctx) => GerenciarPaisesScreen(),
+              ));
             },
           ),
         ],

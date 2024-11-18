@@ -1,6 +1,6 @@
 {
-    "name": "hello_world",
-    "short_name": "hello_world",
+    "name": "three_mini_projeto",
+    "short_name": "three_mini_projeto",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -14,7 +14,7 @@ class MinhasAbas extends StatefulWidget {
 
 class _MinhasAbasState extends State<MinhasAbas> {
   String _nomeTab = "Países";
-  final List<String> _nomeTabs = ["Países", "Favoritos"];
+  List<String> _nomeTabs = ["Países", "Favoritos"];
 
   void _getNomeTab(int index) {
     setState(() {
@@ -30,14 +30,14 @@ class _MinhasAbasState extends State<MinhasAbas> {
             appBar: AppBar(
               title: Text(
                 _nomeTab,
-                style: const TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white),
               ),
               backgroundColor: ThemeData().primaryColor,
             ),
-            drawer: const MeuDrawer(),
+            drawer: MeuDrawer(),
             body: Column(
               children: <Widget>[
-                const Expanded(
+                Expanded(
                   child: TabBarView(
                     children: [
                       PaisScreen(),
@@ -46,7 +46,7 @@ class _MinhasAbasState extends State<MinhasAbas> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
                   decoration: BoxDecoration(
                     color: ThemeData().primaryColor,
                   ),

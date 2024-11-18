@@ -16,13 +16,13 @@ class DetalhesLugarScreen extends StatelessWidget {
         backgroundColor: ThemeData().primaryColor,
         title: Text(
           lugar.titulo,
-          style: const TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: Column(
         children: <Widget>[
           // Imagem do lugar
-          SizedBox(
+          Container(
             height: 300,
             width: double.infinity,
             child: Image.network(
@@ -65,7 +65,7 @@ class DetalhesLugarScreen extends StatelessWidget {
                           print(lugar.recomendacoes[index]);
                         },
                       ),
-                      const Divider(),
+                      Divider(),
                     ],
                   );
                 }),
